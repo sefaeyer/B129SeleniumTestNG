@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 public class C03_Priority {
@@ -15,6 +16,14 @@ public class C03_Priority {
     tanımlayabiliriz.
         Priority küçükten büyüğe göre çalışır. Eğer bir test methoduna priority atanmamışsa
     default olarak priority=0 kabul edilir.
+
+        ------------
+    Test NG'de  test methodları alfabetik sıraya göre çalışır.
+    @Test(priority = 1) Test casleride öncelikli çalıştırma için kullanuılır.
+    Not: priority kullanılmayan testlerin varsayilan priority değeri 0'dır
+    ------------
+    @Ignore: @Test caseleri atlamak için kullanılır
+    @Test(enable=false) @Test caseleri kullanıma kapatmak için kullanılır
      */
     WebDriver driver;
     @Test(priority = -3)
@@ -30,6 +39,16 @@ public class C03_Priority {
     @Test(priority = -2)
     public void facebookTest() {
         driver.get("https://facebook.com");
+    }
+@Ignore // gormezden gelir
+    @Test
+    public void test1() {
+        System.out.println("Test1");
+    }
+
+    @Test(enabled = false)
+    public void test2() {
+        System.out.println("Test2");
     }
 
     @BeforeMethod

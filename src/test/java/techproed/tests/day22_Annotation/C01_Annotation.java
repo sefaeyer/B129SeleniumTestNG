@@ -16,6 +16,14 @@ public class C01_Annotation {
     --TestNG de @BeforeGroups,@AfterGroups,@FindBy gibi notasyonlarda vardır bunları ileriki konularda göreceğiz
     --JUnit'te @BeforeClass ve @AfterClass notasyonuna sahip methodlar static olmak ZORUNDAYDI.
     TestNG frameworkunde böyle bir zorunluluk yoktur.
+
+    ------------
+    Test NG'de  test methodları alfabetik sıraya göre çalışır.
+    @Test(priority = 1) Test casleride öncelikli çalıştırma için kullanuılır.
+    Not: priority kullanılmayan testlerin varsayilan priority değeri 0'dır
+    ------------
+    @Ignore: @Test caseleri atlamak için kullanılır
+    @Test(enable=false) @Test caseleri kullanıma kapatmak için kullanılır
      */
 
     @Test
