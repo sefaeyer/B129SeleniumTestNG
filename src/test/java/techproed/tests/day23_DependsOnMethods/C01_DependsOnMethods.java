@@ -22,7 +22,7 @@ public class C01_DependsOnMethods {
 
     @Test
     public void homePageTest() {
-        assertEquals(1, 2);//Burada "hard assertion" kullanıldığı için test fail olduğunda Java çalışmayı durdurur ve sonraki kodlar çalışmaz.
+        //assertEquals(2, 1);//Burada "hard assertion" kullanıldığı için test fail olduğunda Java çalışmayı durdurur ve sonraki kodlar çalışmaz.
         System.out.println("Anasayfaya gidildi");
     }
 
