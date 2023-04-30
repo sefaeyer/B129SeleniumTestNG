@@ -1,12 +1,6 @@
-package techproed.tests.day23_DependsOnMethods;
+package techproed.tests.day23_DependsOnMethods_SofAssertion;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
-
-import java.time.Duration;
 
 import static org.testng.Assert.assertEquals;
 
