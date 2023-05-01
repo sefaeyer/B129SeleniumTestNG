@@ -35,9 +35,6 @@ public class C03_BlueRentalExcelTest2 {
             blueRentalPage.logout.click();
             ReusableMethods.bekle(1);
             blueRentalPage.ok.click();
-
-
-
         }
         Driver.closeDriver();
 
