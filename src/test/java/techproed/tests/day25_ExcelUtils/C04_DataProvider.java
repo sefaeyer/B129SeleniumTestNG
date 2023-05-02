@@ -26,7 +26,7 @@ public class C04_DataProvider {
     olusturdugumuz methodun adini yazariz
      */
 
-    @Test(dataProvider = "urunler")
+    @Test(dataProvider = "googleTest")
     public void testdataprovider(String data) { //DataP.daki verileri alabilmek icin
                                                 // Test methodumuza String bir parametre atamasi yapariz
         System.out.println(data);
