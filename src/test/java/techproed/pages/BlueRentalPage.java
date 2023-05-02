@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import techproed.utilities.Driver;
 
+import java.util.List;
+
 public class BlueRentalPage {
     public BlueRentalPage(){
         PageFactory.initElements(Driver.getDriver(),this);
@@ -30,5 +32,11 @@ public class BlueRentalPage {
 
     @FindBy(xpath = "//*[text()='OK']")
     public WebElement ok;
+
+    //Bu bir örnektir
+    @FindBy(xpath = "//*[text()='OK']")//-> Linklerin listesinin locati
+    public List<WebElement> listler;
+    //Normalde Webelementleri locate için findelements kullanıyorduk
+    //TestNG de page class'ında bunun kullanımı yukarıdaki örnekteki gibidir
 
 }
