@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="classes" thread-count="2">
+    <test name="Day 2 Parallel Test">
+        <!-- .xml file ile paralel test yapmak icin projemizi oncelik buna gore dizayn etmeliyiz
+             Calisan testler birbirinden bagimsiz olmalidir. Bagimlili olan testler paralel calistirmada
+             hata verebilir.
+             Paralel test yapabilmek icin oncelikle <suite> tag ina parallel parametresi yazariz.
+             sonrasinda parallel parametresine class, method, tests gibi atamalarla hangi seviyede test yapacagini belirleriz
+             claas  -> her bir islem icin bir class ile run eder. Calistigi class ta islem bitince siradaki class a gecer
+             method -> her bir islem icin bir method ile run eder.
+             tests  -> her bir islem icin bir test ile run eder.
+             -->
+        <classes>
+            <class name="techproed.tests.day23_DependsOnMethods_SofAssertion.C01_DependsOnMethods">
+                <methods>
+                    <include name="homePageTest"/>
+                    <include name="seachTest"/>
+                    <include name="signInTest"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day23_DependsOnMethods_SofAssertion.C02_SoftAssertion">
+                <methods>
+                    <include name="softAssertTest"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day23_DependsOnMethods_SofAssertion.C03_Driver_ConfigReader_Test">
+                <methods>
+                    <include name="driverTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Day 24 SMOKE test">
+    <test name="Negative ve Positive Test">
+        <!-- Testlerimizde .xml file ile belirli gruplari calistirmak istersek,
+             calistirmak istedigimiz istedigimiz @Test notasyonundan sonra group parametresi ile isim belirtmemiz gerekir
+             .xml file ile belirli gruplari calistirmak icin <test> tag indan sonra <group> tag i sonra
+             <run> ve  <include> taglari sirasiyla kullanilir
+             Sonrasinda hangi class ya da package da oldugu belirtilir. -->
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="techproed.tests.day24_Properties_Pages.SmokeTest.NegativeTest"/>
+            <class name="techproed.tests.day24_Properties_Pages.SmokeTest.PositiveTest"/>
+        </classes>
+        <!--
+        <packages>
+            <package name="techproed.tests.day24_Properties_Pages.C04_SmokeTest"></package>
+        </packages>
+        Yukarda da belirttiğimiz gibi package ilede groups ismine ulaşabiliriz-->
+    </test>
+</suite>

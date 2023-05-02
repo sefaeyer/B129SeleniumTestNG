@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="4" name="day 22 Tests">
+        <classes>
+            <class name="techproed.tests.day22_Annotation.C01_Annotation">
+                <methods>
+                    <exclude name="test4"/>
+                </methods>
+            </class>
+            <!-- exclude ile yukaridaki ornekte test4 methodu haricindeki methodlar calisacak -->
+
+            <class name="techproed.tests.day22_Annotation.C02_BeforeAfterMethod">
+                <methods>
+                    <exclude name="amazonTest"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day22_Annotation.C03_Priority">
+                <methods>
+                    <exclude name="facebookTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

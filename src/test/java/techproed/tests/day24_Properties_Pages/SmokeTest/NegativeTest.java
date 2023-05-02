@@ -10,7 +10,7 @@ import techproed.utilities.ReusableMethods;
 
 public class NegativeTest {
 
-    @Test
+    @Test(groups = "smoke")
     public void test1() throws InterruptedException {
         /*
         Description:

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Day 23 ve Day 25 Istenen Classlari Calistirma" parallel="methods" thread-count="2">
+    <test name="Day 23 Istenen Classlari Calistirma">
+        <classes>
+            <class name="techproed.tests.day23_DependsOnMethods_SofAssertion.C01_DependsOnMethods"/>
+            <class name="techproed.tests.day23_DependsOnMethods_SofAssertion.C03_Driver_ConfigReader_Test"/>
+        </classes>
+    </test>
+    <test name="Day 25 BlueRentalCar">
+        <classes>
+            <class name="techproed.tests.day25_ExcelUtils.C03_BlueRentalExcelTest2"/>
+        </classes>
+    </test>
+</suite>
