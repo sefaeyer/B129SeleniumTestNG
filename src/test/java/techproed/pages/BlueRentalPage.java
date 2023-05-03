@@ -39,4 +39,27 @@ public class BlueRentalPage {
     //Normalde Webelementleri locate için findelements kullanıyorduk
     //TestNG de page class'ında bunun kullanımı yukarıdaki örnekteki gibidir
 
+
+    //-------------------------------------------------------------
+
+
+    @FindBy(xpath = "//*[@name='car']")
+    public WebElement aracSecimi;
+
+    @FindBy(xpath = "(//*[@class='form-control is-invalid'])[1]")
+    public WebElement pickup;
+
+    @FindBy (xpath = "(//*[@class='form-control is-invalid'])[2]")
+    public WebElement dropOff;
+    @FindBy (xpath = "(//*[@class='form-control is-invalid'])[3]")
+    public WebElement pickUpDate;
+    @FindBy (xpath = "(//*[@class='form-control is-invalid'])[4]")
+    public WebElement dropOffDate;
+    @FindBy (xpath = "(//*[@class='form-control'])[2]")
+    public WebElement dropOffTime;
+    @FindBy (xpath = "(//*[@class='form-control is-invalid'])[3]")
+    public WebElement pickUpTime;
+
+    @FindBy(xpath = "//*[@class='w-100 btn btn-primary btn-lg']")
+    public  WebElement continueReservation;
 }
