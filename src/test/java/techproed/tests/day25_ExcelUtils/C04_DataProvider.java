@@ -10,6 +10,7 @@ import techproed.utilities.ReusableMethods;
 
 public class C04_DataProvider {
 
+
             /*
         -DataProvider, birçok veriyi test caselere loop kullanmadan aktarmak için kullanılır.
         TestNG'den gelen bir özellilktir.2 boyutlu br object array return eder.
@@ -32,9 +33,10 @@ public class C04_DataProvider {
         System.out.println(data);
 
     }
+
     @DataProvider(name = "googleTest")
     public static Object[][] urunler() {
-        return new Object[][]{{"Volvo"},{"Mercedes"},{"Audi"},{"Honda"},{"Toyota"},{"Opel"},{"BMW"}};
+        return new Object[][]{{"Volvo"}, {"Mercedes"}, {"Audi"}, {"Honda"}, {"Toyota"}, {"Opel"}, {"BMW"}};
     }
 
     @Test(dataProvider = "googleTest")
